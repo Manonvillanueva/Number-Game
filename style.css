@@ -13,8 +13,8 @@
 
 body {
   padding: 40px;
+  min-height: 100vh;
   background: url(./img/bg.jpg) left/cover;
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -93,6 +93,10 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   border: 1px solid #242677;
   color: rgb(18, 16, 20);
+}
+
+.validBtn:hover {
+  background-color: white;
 }
 
 #resultGame {
