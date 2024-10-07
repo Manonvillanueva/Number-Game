@@ -16,6 +16,11 @@ btns.forEach((btn) => {
   });
 });
 
+// Effacer le contenu de l'input
+returnBtn.addEventListener("click", () => {
+  displayNumber.value = "";
+});
+
 validBtn.addEventListener("click", () => {
   // Récupérer la valeur de l'utilisateur en recupérant la valeur de l'input displayNumber
   const userValue = displayNumber.value;
@@ -49,7 +54,7 @@ validBtn.addEventListener("click", () => {
 
 // Mis à jour de l'affichage des tentatives
 function displayAttempts() {
-  // resultGame.innerHTML = "";
+  resultGame.innerHTML = "";
   attempts.forEach((attempt) => {
     const p = document.createElement("p");
     p.textContent = attempt;
